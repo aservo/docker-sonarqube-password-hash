@@ -18,6 +18,7 @@ ARG CLI_BIN=/usr/local/bin/sonarqube-password-hash
 
 RUN apt-get update && \
     apt-get --no-install-recommends --yes install \
+        jq \
         postgresql-client \
         && \
     apt-get clean && \
